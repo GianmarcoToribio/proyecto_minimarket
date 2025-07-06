@@ -17,3 +17,4 @@ namespace CapaEntidad
         public string FechaRegistro { get; set; }
     }
 }
+
