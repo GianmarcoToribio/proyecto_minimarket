@@ -23,26 +23,6 @@ namespace CapaPresentacion
 
         private void frmReporteCompras_Load(object sender, EventArgs e)
         {
-            /*List<Proveedor> lista = new CN_Proveedor().Listar();
-
-            cboproveedor.Items.Add(new OpcionCombo() { Valor = 0, Texto = "TODOS" });
-            foreach (Proveedor item in lista)
-            {
-                cboproveedor.Items.Add(new OpcionCombo() { Valor = item.IdProveedor, Texto = item.RazonSocial });
-            }
-            cboproveedor.DisplayMember = "Texto";
-            cboproveedor.ValueMember = "Valor";
-            cboproveedor.SelectedIndex = 0;
-
-
-            foreach (DataGridViewColumn columna in dgvdata.Columns)
-            {
-                cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
-            }
-            cbobusqueda.DisplayMember = "Texto";
-            cbobusqueda.ValueMember = "Valor";
-            cbobusqueda.SelectedIndex = 0;*/
-
 
             // Cargar proveedores en cboproveedor
             List<Proveedor> lista = new CN_Proveedor().Listar();
@@ -183,37 +163,6 @@ namespace CapaPresentacion
         private void btnbuscar_Click(object sender, EventArgs e)
         {
 
-            /*string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
-            bool found = false; // Variable para verificar si se encontró al menos un resultado
-
-            if (dgvdata.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvdata.Rows)
-                {
-                    // Verifica si la celda contiene el texto buscado
-                    if (row.Cells[columnaFiltro].Value != null &&
-                        row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
-                    {
-                        row.Visible = true; // Mostrar la fila si coincide con la búsqueda
-                        found = true; // Se encontró al menos un resultado
-                    }
-                    else
-                    {
-                        row.Visible = false; // Ocultar la fila si no coincide
-                    }
-                }
-
-                // Si no se encontró ningún resultado, mostrar un mensaje
-                if (!found)
-                {
-                    MessageBox.Show("No se encontraron resultados para la búsqueda.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            else
-            {
-                MessageBox.Show("No hay datos disponibles para buscar.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }*/
-
             string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
             bool found = false; // Variable para verificar si se encontró al menos un resultado
 
@@ -257,6 +206,11 @@ namespace CapaPresentacion
         }
 
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

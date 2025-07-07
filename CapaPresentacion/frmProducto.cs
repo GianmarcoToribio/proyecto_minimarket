@@ -130,20 +130,7 @@ namespace CapaPresentacion
             // Cargar los datos ordenados en el DataGridView
             foreach (var producto in productos)
             {
-                /*dgvdata.Rows.Add(new object[] {
-            "",
-            producto.IdProducto,
-            producto.Codigo,
-            producto.Nombre,
-            producto.Descripcion,
-            producto.oCategoria.IdCategoria.ToString(),
-            producto.oCategoria.Descripcion, // Cambia según tus campos
-            "0", // Puedes reemplazar con el stock si lo tienes
-            "0.00", // Precio de compra, si aplica
-            "0.00", // Precio de venta, si aplica
-            producto.Estado ? "1" : "0",
-            producto.Estado ? "Activo" : "No Activo"
-        });*/
+
                 dgvdata.Rows.Add(new object[] {
     "",
     producto.IdProducto,
@@ -339,31 +326,6 @@ namespace CapaPresentacion
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            /*if (Convert.ToInt32(txtid.Text) != 0)
-            {
-                if (MessageBox.Show("¿Desea eliminar el producto", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-
-                    string mensaje = string.Empty;
-                    Producto obj = new Producto()
-                    {
-                        IdProducto = Convert.ToInt32(txtid.Text)
-                    };
-
-                    bool respuesta = new CN__Producto().Eliminar(obj, out mensaje);
-
-                    if (respuesta)
-                    {
-                        dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
-                        Limpiar();
-                    }
-                    else
-                    {
-                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-
-                }
-            }*/
 
             if (Convert.ToInt32(txtid.Text) != 0)
             {
