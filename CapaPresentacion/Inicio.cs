@@ -133,12 +133,12 @@ namespace CapaPresentacion
 
         private void submenureportecompras_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormulario(menureportes, new frmReporteCompras());
         }
 
         private void submenureporteventas_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
         private void menuacercade_Click(object sender, EventArgs e)
