@@ -45,6 +45,15 @@ namespace CapaPresentacion
 
 
             // Cargar proveedores en cboproveedor
+            List<Proveedor> lista = new CN_Proveedor().Listar();
+            cboproveedor.Items.Add(new OpcionCombo() { Valor = 0, Texto = "TODOS" });
+            foreach (Proveedor item in lista)
+            {
+                cboproveedor.Items.Add(new OpcionCombo() { Valor = item.IdProveedor, Texto = item.RazonSocial });
+            }
+            cboproveedor.DisplayMember = "Texto";
+            cboproveedor.ValueMember = "Valor";
+            cboproveedor.SelectedIndex = 0;
 
             // Limpiar el ComboBox de búsqueda y agregar solo las opciones permitidas
             cbobusqueda.Items.Clear();

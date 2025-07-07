@@ -44,7 +44,22 @@ namespace CapaPresentacion
 
         private void btnbuscarcliente_Click(object sender, EventArgs e)
         {
-            
+            using (var modal = new mdCliente())
+            {
+                var result = modal.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    txtdocumentocliente.Text = modal._Cliente.Documento;
+                    txtnombrecliente.Text = modal._Cliente.NombreCompleto;
+                    txtcodproducto.Select();
+                }
+                else
+                {
+                    txtdocumentocliente.Select();
+                }
+                btnbuscarcliente.Enabled = false;
+            }
         }
 
         private void btnbuscarproducto_Click(object sender, EventArgs e)
