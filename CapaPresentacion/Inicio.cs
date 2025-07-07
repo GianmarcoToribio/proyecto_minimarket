@@ -159,5 +159,10 @@ namespace CapaPresentacion
             lblFecha.Text = "Fecha: " + DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

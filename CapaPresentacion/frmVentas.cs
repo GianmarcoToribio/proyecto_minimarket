@@ -267,67 +267,6 @@ namespace CapaPresentacion
                 e.Handled = true;
             }
         }
-
-        /*private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Verifica si se hizo clic en la columna de Eliminar
-            if (e.ColumnIndex == 5)  // Columna 5 es para eliminar
-            {
-                int index = e.RowIndex;
-
-                if (index >= 0)
-                {
-                    bool respuesta = new CN_Venta().SumarStock(
-                        Convert.ToInt32(dgvdata.Rows[index].Cells["IdProducto"].Value.ToString()),
-                        Convert.ToInt32(dgvdata.Rows[index].Cells["Cantidad"].Value.ToString())
-                    );
-
-                    if (respuesta)
-                    {
-                        dgvdata.Rows.RemoveAt(index);
-                        calcularTotal();
-                    }
-                }
-            }
-
-            // Verifica si se hizo clic en la columna de Editar
-            if (e.ColumnIndex == 6) // Editar
-            {
-                int index = e.RowIndex;
-                if (index >= 0)
-                {
-                    int idProducto = Convert.ToInt32(dgvdata.Rows[index].Cells["IdProducto"].Value);
-                    int cantidad = Convert.ToInt32(dgvdata.Rows[index].Cells["Cantidad"].Value);
-                    decimal precioProducto = Convert.ToDecimal(dgvdata.Rows[index].Cells["Precio"].Value);
-
-                    // Pide la nueva cantidad
-                    var nuevaCantidad = Prompt.ShowDialog("Ingrese la nueva cantidad:", "Editar cantidad", cantidad.ToString());
-
-                    if (int.TryParse(nuevaCantidad, out int cantidadEditada))
-                    {
-                        // 1. Restar el stock original
-                        new CN_Venta().SumarStock(idProducto, cantidad);
-
-                        // 2. Sumar el stock de la nueva cantidad
-                        new CN_Venta().RestarStock(idProducto, cantidadEditada);
-
-                        // Actualizar la fila del DataGridView
-                        dgvdata.Rows[index].Cells["Cantidad"].Value = cantidadEditada;
-                        decimal subTotal = precioProducto * cantidadEditada;
-                        dgvdata.Rows[index].Cells["SubTotal"].Value = subTotal;
-
-                        calcularTotal();
-                    }
-                    else
-                    {
-                        MessageBox.Show("La cantidad no es válida.");
-                    }
-                }
-            }
-
-        }*/
-
-
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Verifica si se hizo clic en la columna de Eliminar
@@ -658,6 +597,11 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

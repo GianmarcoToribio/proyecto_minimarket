@@ -91,6 +91,7 @@ namespace CapaPresentacion
 
         }
 
+<<<<<<< HEAD
         /*private void btnbuscar_Click(object sender, EventArgs e)
         {
 
@@ -126,6 +127,8 @@ namespace CapaPresentacion
             }
 
         }*/
+=======
+>>>>>>> gianmarco
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
@@ -170,6 +173,7 @@ namespace CapaPresentacion
             }
         }
 
+<<<<<<< HEAD
         /*private void btnexportar_Click(object sender, EventArgs e)
         {
             if (dgvdata.Rows.Count < 1)
@@ -234,6 +238,8 @@ namespace CapaPresentacion
             }
         }*/
 
+=======
+>>>>>>> gianmarco
         private void btnexportar_Click(object sender, EventArgs e)
         {
             // Verificar si hay registros para exportar
@@ -298,6 +304,13 @@ namespace CapaPresentacion
             }
         }
 
+<<<<<<< HEAD
 
+=======
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> gianmarco
     }
 }

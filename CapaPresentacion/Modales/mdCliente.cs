@@ -15,7 +15,6 @@ namespace CapaPresentacion.Modales
 {
     public partial class mdCliente : Form
     {
-        private readonly CN_Cliente _clienteNegocio;
         public Cliente _Cliente { get; set; }
 
         public mdCliente()
@@ -34,7 +33,9 @@ namespace CapaPresentacion.Modales
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            List<Cliente> lista = _clienteNegocio.Listar();
+
+            List<Cliente> lista = new CN_Cliente().Listar();
+
 
             foreach (Cliente item in lista)
             {

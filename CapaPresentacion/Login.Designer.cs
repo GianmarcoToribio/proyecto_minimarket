@@ -49,9 +49,11 @@
             this.label1.BackColor = System.Drawing.Color.SandyBrown;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 253);
+            this.label1.Size = new System.Drawing.Size(380, 311);
             this.label1.TabIndex = 0;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -59,43 +61,48 @@
             this.label2.BackColor = System.Drawing.Color.SandyBrown;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 183);
+            this.label2.Location = new System.Drawing.Point(93, 225);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 25);
+            this.label2.Size = new System.Drawing.Size(179, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "MAXIMARKET";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtdocumento
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(307, 96);
+            this.txtdocumento.Location = new System.Drawing.Point(409, 118);
+            this.txtdocumento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(222, 20);
+            this.txtdocumento.Size = new System.Drawing.Size(295, 22);
             this.txtdocumento.TabIndex = 3;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(307, 141);
+            this.txtclave.Location = new System.Drawing.Point(409, 174);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '*';
-            this.txtclave.Size = new System.Drawing.Size(222, 20);
+            this.txtclave.Size = new System.Drawing.Size(295, 22);
             this.txtclave.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(307, 77);
+            this.label3.Location = new System.Drawing.Point(409, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(104, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nro Documento:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(307, 125);
+            this.label4.Location = new System.Drawing.Point(409, 154);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(79, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Contraseña:";
             // 
@@ -110,9 +117,10 @@
             this.btningresar.IconColor = System.Drawing.Color.White;
             this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btningresar.IconSize = 21;
-            this.btningresar.Location = new System.Drawing.Point(310, 186);
+            this.btningresar.Location = new System.Drawing.Point(413, 229);
+            this.btningresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(102, 25);
+            this.btningresar.Size = new System.Drawing.Size(136, 31);
             this.btningresar.TabIndex = 7;
             this.btningresar.Text = "Ingresar";
             this.btningresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -131,9 +139,10 @@
             this.btncancelar.IconColor = System.Drawing.Color.White;
             this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncancelar.IconSize = 21;
-            this.btncancelar.Location = new System.Drawing.Point(434, 186);
+            this.btncancelar.Location = new System.Drawing.Point(579, 229);
+            this.btncancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(102, 25);
+            this.btncancelar.Size = new System.Drawing.Size(136, 31);
             this.btncancelar.TabIndex = 8;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -145,18 +154,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(304, 43);
+            this.label5.Location = new System.Drawing.Point(405, 53);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 20);
+            this.label5.Size = new System.Drawing.Size(178, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "INICIAR SESION";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(468, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(624, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(81, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -165,19 +176,20 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SandyBrown;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(86, 47);
+            this.pictureBox2.Location = new System.Drawing.Point(115, 58);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 114);
+            this.pictureBox2.Size = new System.Drawing.Size(149, 140);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(563, 253);
+            this.ClientSize = new System.Drawing.Size(751, 311);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -190,6 +202,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

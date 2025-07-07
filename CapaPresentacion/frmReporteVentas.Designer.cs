@@ -66,10 +66,11 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 9);
+            this.label10.Location = new System.Drawing.Point(16, 11);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(1123, 81);
+            this.label10.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.label10.Size = new System.Drawing.Size(1497, 99);
             this.label10.TabIndex = 215;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -78,9 +79,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 18);
+
+            this.label2.Location = new System.Drawing.Point(31, 22);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 25);
+            this.label2.Size = new System.Drawing.Size(188, 29);
+
             this.label2.TabIndex = 222;
             this.label2.Text = "Reporte Ventas";
             // 
@@ -92,9 +96,10 @@
             this.btnbuscarreporte.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarreporte.IconSize = 17;
             this.btnbuscarreporte.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscarreporte.Location = new System.Drawing.Point(400, 55);
+            this.btnbuscarreporte.Location = new System.Drawing.Point(533, 68);
+            this.btnbuscarreporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscarreporte.Name = "btnbuscarreporte";
-            this.btnbuscarreporte.Size = new System.Drawing.Size(78, 21);
+            this.btnbuscarreporte.Size = new System.Drawing.Size(104, 26);
             this.btnbuscarreporte.TabIndex = 234;
             this.btnbuscarreporte.Text = "Buscar";
             this.btnbuscarreporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -106,27 +111,32 @@
             // 
             this.txtfechafin.CustomFormat = "dd/MM/yyyy";
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechafin.Location = new System.Drawing.Point(288, 55);
+            this.txtfechafin.Location = new System.Drawing.Point(384, 68);
+            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechafin.Name = "txtfechafin";
-            this.txtfechafin.Size = new System.Drawing.Size(97, 20);
+            this.txtfechafin.Size = new System.Drawing.Size(128, 22);
+
             this.txtfechafin.TabIndex = 233;
             // 
             // txtfechainicio
             // 
             this.txtfechainicio.CustomFormat = "dd/MM/yyyy";
             this.txtfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechainicio.Location = new System.Drawing.Point(100, 55);
+            this.txtfechainicio.Location = new System.Drawing.Point(133, 68);
+            this.txtfechainicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechainicio.Name = "txtfechainicio";
-            this.txtfechainicio.Size = new System.Drawing.Size(97, 20);
+            this.txtfechainicio.Size = new System.Drawing.Size(128, 22);
+
             this.txtfechainicio.TabIndex = 231;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(26, 57);
+            this.label4.Location = new System.Drawing.Point(35, 70);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 232;
             this.label4.Text = "Fecha Inicio:";
             // 
@@ -135,9 +145,12 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 55);
+
+            this.label3.Location = new System.Drawing.Point(291, 68);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(77, 18);
+
             this.label3.TabIndex = 230;
             this.label3.Text = "Fecha Fin:";
             // 
@@ -146,10 +159,11 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(16, 122);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(1123, 392);
+            this.label1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(1497, 482);
             this.label1.TabIndex = 235;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -181,94 +195,151 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(24, 150);
+            this.dgvdata.Location = new System.Drawing.Point(32, 185);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
+            this.dgvdata.RowHeadersWidth = 51;
+
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(1099, 329);
+
+            this.dgvdata.Size = new System.Drawing.Size(1465, 405);
+
             this.dgvdata.TabIndex = 236;
             // 
             // FechaRegistro
             // 
             this.FechaRegistro.HeaderText = "Fecha Registro";
+
+            this.FechaRegistro.MinimumWidth = 6;
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Width = 125;
+
             // 
             // TipoDocumento
             // 
             this.TipoDocumento.HeaderText = "Tipo Documento";
+
+            this.TipoDocumento.MinimumWidth = 6;
             this.TipoDocumento.Name = "TipoDocumento";
             this.TipoDocumento.ReadOnly = true;
+            this.TipoDocumento.Width = 125;
+
             // 
             // NumeroDocumento
             // 
             this.NumeroDocumento.HeaderText = "Numero Documento";
+
+            this.NumeroDocumento.MinimumWidth = 6;
             this.NumeroDocumento.Name = "NumeroDocumento";
             this.NumeroDocumento.ReadOnly = true;
+            this.NumeroDocumento.Width = 125;
+
             // 
             // MontoTotal
             // 
             this.MontoTotal.HeaderText = "Monto Total";
+
+            this.MontoTotal.MinimumWidth = 6;
             this.MontoTotal.Name = "MontoTotal";
             this.MontoTotal.ReadOnly = true;
+            this.MontoTotal.Width = 125;
+
             // 
             // UsuarioRegistro
             // 
             this.UsuarioRegistro.HeaderText = "Usuario Registro";
+
+            this.UsuarioRegistro.MinimumWidth = 6;
             this.UsuarioRegistro.Name = "UsuarioRegistro";
             this.UsuarioRegistro.ReadOnly = true;
+            this.UsuarioRegistro.Width = 125;
+
             // 
             // DocumentoCliente
             // 
             this.DocumentoCliente.HeaderText = "Documento Cliente";
+
+            this.DocumentoCliente.MinimumWidth = 6;
             this.DocumentoCliente.Name = "DocumentoCliente";
             this.DocumentoCliente.ReadOnly = true;
+            this.DocumentoCliente.Width = 125;
+
             // 
             // NombreCliente
             // 
             this.NombreCliente.HeaderText = "Nombre Cliente";
+
+            this.NombreCliente.MinimumWidth = 6;
             this.NombreCliente.Name = "NombreCliente";
             this.NombreCliente.ReadOnly = true;
+            this.NombreCliente.Width = 125;
+
             // 
             // CodigoProducto
             // 
             this.CodigoProducto.HeaderText = "Codigo Producto";
+
+            this.CodigoProducto.MinimumWidth = 6;
             this.CodigoProducto.Name = "CodigoProducto";
             this.CodigoProducto.ReadOnly = true;
+            this.CodigoProducto.Width = 125;
+
             // 
             // NombreProducto
             // 
             this.NombreProducto.HeaderText = "Nombre Producto";
+
+            this.NombreProducto.MinimumWidth = 6;
             this.NombreProducto.Name = "NombreProducto";
             this.NombreProducto.ReadOnly = true;
+            this.NombreProducto.Width = 125;
+
             // 
             // Categoria
             // 
             this.Categoria.HeaderText = "Categoria";
+
+            this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
+            this.Categoria.Width = 125;
+
             // 
             // PrecioVenta
             // 
             this.PrecioVenta.HeaderText = "Precio Venta";
+
+            this.PrecioVenta.MinimumWidth = 6;
             this.PrecioVenta.Name = "PrecioVenta";
             this.PrecioVenta.ReadOnly = true;
+            this.PrecioVenta.Width = 125;
+
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
+
+            this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
+
             // 
             // SubTotal
             // 
             this.SubTotal.HeaderText = "Sub Total";
+
+            this.SubTotal.MinimumWidth = 6;
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 125;
+
             // 
             // btnexportar
             // 
@@ -280,9 +351,12 @@
             this.btnexportar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnexportar.IconSize = 17;
             this.btnexportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnexportar.Location = new System.Drawing.Point(23, 112);
+
+            this.btnexportar.Location = new System.Drawing.Point(31, 138);
+            this.btnexportar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnexportar.Name = "btnexportar";
-            this.btnexportar.Size = new System.Drawing.Size(118, 21);
+            this.btnexportar.Size = new System.Drawing.Size(157, 26);
+
             this.btnexportar.TabIndex = 242;
             this.btnexportar.Text = "Descargar Excel";
             this.btnexportar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -301,9 +375,12 @@
             this.btnlimpiarbuscador.IconColor = System.Drawing.Color.Black;
             this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiarbuscador.IconSize = 18;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(1080, 111);
+
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(1440, 137);
+            this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
-            this.btnlimpiarbuscador.Size = new System.Drawing.Size(42, 23);
+            this.btnlimpiarbuscador.Size = new System.Drawing.Size(56, 28);
+
             this.btnlimpiarbuscador.TabIndex = 241;
             this.btnlimpiarbuscador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiarbuscador.UseVisualStyleBackColor = false;
@@ -311,27 +388,36 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(872, 113);
+
+            this.txtbusqueda.Location = new System.Drawing.Point(1163, 139);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(152, 20);
+            this.txtbusqueda.Size = new System.Drawing.Size(201, 22);
+
             this.txtbusqueda.TabIndex = 239;
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(750, 112);
+
+            this.cbobusqueda.Location = new System.Drawing.Point(1000, 138);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(116, 21);
+            this.cbobusqueda.Size = new System.Drawing.Size(153, 24);
+
             this.cbobusqueda.TabIndex = 238;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(683, 116);
+
+            this.label11.Location = new System.Drawing.Point(911, 143);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.Size = new System.Drawing.Size(75, 16);
+
             this.label11.TabIndex = 237;
             this.label11.Text = "Buscar por:";
             // 
@@ -346,18 +432,23 @@
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 16;
-            this.btnbuscar.Location = new System.Drawing.Point(1032, 111);
+
+            this.btnbuscar.Location = new System.Drawing.Point(1376, 137);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(42, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(56, 28);
+
             this.btnbuscar.TabIndex = 240;
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // frmReporteVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 496);
+            this.ClientSize = new System.Drawing.Size(1517, 610);
+
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btnlimpiarbuscador);
             this.Controls.Add(this.txtbusqueda);
@@ -373,6 +464,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label10);
+
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.Name = "frmReporteVentas";
             this.Text = "frmReporteVentas";
             this.Load += new System.EventHandler(this.frmReporteVentas_Load);

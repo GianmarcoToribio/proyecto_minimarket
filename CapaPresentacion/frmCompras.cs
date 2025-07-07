@@ -229,17 +229,6 @@ namespace CapaPresentacion
             txtcantidad.Value = 1;
         }
 
-        /*private void calcularTotal()
-        {
-            decimal total = 0;
-            if (dgvdata.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvdata.Rows)
-                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());
-            }
-            txttotalpagar.Text = total.ToString("0.00");
-        }*/
-
         private void calcularTotal()
         {
             decimal total = 0;
@@ -256,43 +245,6 @@ namespace CapaPresentacion
         }
 
 
-        /*private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-        {
-            if (e.RowIndex < 0)
-                return;
-
-            if (e.ColumnIndex == 6)
-            {
-
-                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
-
-                var w = Properties.Resources.delete25.Width;
-                var h = Properties.Resources.delete25.Height;
-                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
-                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
-
-                e.Graphics.DrawImage(Properties.Resources.delete25, new Rectangle(x, y, w, h));
-                e.Handled = true;
-            }
-        }
-
-        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            if (dgvdata.Columns[e.ColumnIndex].Name == "btneliminar")
-            {
-                int indice = e.RowIndex;
-
-                if (indice >= 0)
-                {
-                    dgvdata.Rows.RemoveAt(indice);
-                    calcularTotal();
-                }
-            }
-        }*/
-
-
-        // Este es un método para mostrar un cuadro de diálogo para ingresar un valor
         public static class Prompt
         {
             public static string ShowDialog(string text, string caption, string defaultValue = "")

@@ -11,20 +11,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace CapaPresentacion
 {
     public partial class frmClientes : Form
     {
-        private CN_Cliente _clienteNegocio;
-
         public frmClientes()
         {
             InitializeComponent();
-            _clienteNegocio = new CN_Cliente(new ClienteValidator());
         }
 
-            private void frmClientes_Load(object sender, EventArgs e)
+        private void frmClientes_Load(object sender, EventArgs e)
+
         {
 
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
@@ -58,7 +55,9 @@ namespace CapaPresentacion
             }
 
             // MOSTRAR TODOS LOS USUARIOS
-            List<Cliente> lista = _clienteNegocio.Listar();
+
+            List<Cliente> lista = new CN_Cliente().Listar();
+
 
             foreach (Cliente item in lista)
             {
@@ -95,7 +94,8 @@ namespace CapaPresentacion
 
             if (obj.IdCliente == 0)
             {
-                int idgenerado = _clienteNegocio.Registrar(obj, out mensaje);
+
+                int idgenerado = new CN_Cliente().Registrar(obj, out mensaje);
 
                 if (idgenerado != 0)
                 {
@@ -116,7 +116,9 @@ namespace CapaPresentacion
             }
             else
             {
-                bool resultado = _clienteNegocio.Editar(obj, out mensaje);
+
+                bool resultado = new CN_Cliente().Editar(obj, out mensaje);
+
 
                 if (resultado)
                 {
@@ -225,7 +227,9 @@ namespace CapaPresentacion
                         IdCliente = Convert.ToInt32(txtid.Text)
                     };
 
-                    bool respuesta = _clienteNegocio.Eliminar(obj, out mensaje);
+
+                    bool respuesta = new CN_Cliente().Eliminar(obj, out mensaje);
+
 
                     if (respuesta)
                     {

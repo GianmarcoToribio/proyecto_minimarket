@@ -24,27 +24,6 @@ namespace CapaPresentacion
         private void frmReporteCompras_Load(object sender, EventArgs e)
         {
 
-
-
-            cboproveedor.Items.Add(new OpcionCombo() { Valor = 0, Texto = "TODOS" });
-            foreach (Proveedor item in lista)
-            {
-                cboproveedor.Items.Add(new OpcionCombo() { Valor = item.IdProveedor, Texto = item.RazonSocial });
-            }
-            cboproveedor.DisplayMember = "Texto";
-            cboproveedor.ValueMember = "Valor";
-            cboproveedor.SelectedIndex = 0;
-
-
-            foreach (DataGridViewColumn columna in dgvdata.Columns)
-            {
-                cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
-            }
-            cbobusqueda.DisplayMember = "Texto";
-            cbobusqueda.ValueMember = "Valor";
-            cbobusqueda.SelectedIndex = 0;*/
-
-
             // Cargar proveedores en cboproveedor
             List<Proveedor> lista = new CN_Proveedor().Listar();
             cboproveedor.Items.Add(new OpcionCombo() { Valor = 0, Texto = "TODOS" });
@@ -57,6 +36,9 @@ namespace CapaPresentacion
             cboproveedor.SelectedIndex = 0;
 
             // Limpiar el ComboBox de búsqueda y agregar solo las opciones permitidas
+
+            cbobusqueda.Items.Clear();
+
             cbobusqueda.Items.Add(new OpcionCombo() { Valor = "NumeroDocumento", Texto = "NumeroDocumento" });
             cbobusqueda.Items.Add(new OpcionCombo() { Valor = "UsuarioRegistro", Texto = "UsuarioRegistro" });
             cbobusqueda.Items.Add(new OpcionCombo() { Valor = "CodigoProducto", Texto = "CodigoProducto" });
@@ -76,10 +58,27 @@ namespace CapaPresentacion
 
             List<ReporteCompra> lista = new List<ReporteCompra>();
 
+
+            // Obtener la lista de reportes de compras
+            lista = new CN_Reporte().Compra(
+
                 txtfechainicio.Value.ToString(),
                 txtfechafin.Value.ToString(),
                 idproveedor
             );
+
+
+            // Limpiar el DataGridView antes de agregar nuevos registros
+            dgvdata.Rows.Clear();
+
+            // Verificar si la lista está vacía
+            if (lista.Count == 0)
+            {
+                MessageBox.Show("No se encontraron reportes de compras en el rango de fechas seleccionado.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return; // Salir del método si no hay reportes
+            }
+
+            // Agregar los reportes al DataGridView
 
             foreach (ReporteCompra rc in lista)
             {
@@ -167,10 +166,33 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+
+            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
+            bool found = false; // Variable para verificar si se encontró al menos un resultado
+
+
             if (dgvdata.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvdata.Rows)
                 {
+
+                    // Verifica si la columna seleccionada existe en el DataGridView antes de buscar
+                    if (row.Cells[columnaFiltro] != null && row.Cells[columnaFiltro].Value != null &&
+                        row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
+                    {
+                        row.Visible = true; // Mostrar la fila si coincide con la búsqueda
+                        found = true; // Se encontró al menos un resultado
+                    }
+                    else
+                    {
+                        row.Visible = false; // Ocultar la fila si no coincide
+                    }
+                }
+
+                // Si no se encontró ningún resultado, mostrar un mensaje
+
                 if (!found)
                 {
                     MessageBox.Show("No se encontraron resultados para la búsqueda.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -193,6 +215,11 @@ namespace CapaPresentacion
         }
 
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

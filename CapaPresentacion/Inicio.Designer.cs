@@ -78,6 +78,7 @@
             this.menu.Size = new System.Drawing.Size(1157, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
+            this.menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu_ItemClicked);
             // 
             // menuusuarios
             // 
@@ -195,7 +196,9 @@
             this.submenuregistrarcompra.IconColor = System.Drawing.Color.Black;
             this.submenuregistrarcompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregistrarcompra.Name = "submenuregistrarcompra";
-            this.submenuregistrarcompra.Size = new System.Drawing.Size(129, 22);
+
+            this.submenuregistrarcompra.Size = new System.Drawing.Size(165, 26);
+
             this.submenuregistrarcompra.Text = "Registrar";
             this.submenuregistrarcompra.Click += new System.EventHandler(this.submenuregistrarcompra_Click);
             // 
@@ -205,7 +208,8 @@
             this.submenutverdetallecompra.IconColor = System.Drawing.Color.Black;
             this.submenutverdetallecompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenutverdetallecompra.Name = "submenutverdetallecompra";
-            this.submenutverdetallecompra.Size = new System.Drawing.Size(129, 22);
+
+            this.submenutverdetallecompra.Size = new System.Drawing.Size(165, 26);
             this.submenutverdetallecompra.Text = "Ver Detalle";
             this.submenutverdetallecompra.Click += new System.EventHandler(this.submenutverdetallecompra_Click);
             // 
@@ -307,7 +311,10 @@
             // contenedor
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 139);
+
+            this.contenedor.Location = new System.Drawing.Point(0, 154);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1157, 508);
             this.contenedor.TabIndex = 3;
@@ -345,7 +352,10 @@
             this.btnsalir.IconColor = System.Drawing.Color.Sienna;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnsalir.IconSize = 52;
-            this.btnsalir.Location = new System.Drawing.Point(1086, 8);
+
+            this.btnsalir.Location = new System.Drawing.Point(1448, 10);
+            this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.btnsalir.Size = new System.Drawing.Size(59, 51);
@@ -356,7 +366,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.LogoCanal;
-            this.pictureBox1.Location = new System.Drawing.Point(1086, 8);
+
+            this.pictureBox1.Location = new System.Drawing.Point(1448, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -406,6 +419,9 @@
             this.Controls.Add(this.menutitulo);
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menu;
+
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Inicio_Load);

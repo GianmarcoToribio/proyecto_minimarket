@@ -20,4 +20,7 @@ namespace CapaEntidad
 
     }
 }
+<<<<<<< HEAD
     
+=======
+>>>>>>> gianmarco
