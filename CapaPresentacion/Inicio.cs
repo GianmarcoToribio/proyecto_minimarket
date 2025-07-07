@@ -121,7 +121,7 @@ namespace CapaPresentacion
 
         private void menuproveedores_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario((IconMenuItem)sender, new frmProveedores());
         }
 
 
