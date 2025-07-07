@@ -21,7 +21,6 @@ namespace CapaPresentacion.Modales
         public mdCliente()
         {
             InitializeComponent();
-            _clienteNegocio = new CN_Cliente(new ClienteValidator());
         }
 
         private void mdCliente_Load(object sender, EventArgs e)
