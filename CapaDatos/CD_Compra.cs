@@ -111,7 +111,6 @@ namespace CapaDatos
                             {
                                 IdCompra = Convert.ToInt32(dr["IdCompra"]),
                                 oUsuario = new Usuario() { NombreCompleto = dr["NombreCompleto"].ToString() },
-                                oProveedor = new Proveedor() { Documento = dr["Documento"].ToString(), RazonSocial = dr["RazonSocial"].ToString() },
                                 TipoDocumento = dr["TipoDocumento"].ToString(),
                                 NumeroDocumento = dr["NumeroDocumento"].ToString(),
                                 MontoTotal = Convert.ToDecimal(dr["MontoTotal"].ToString()),

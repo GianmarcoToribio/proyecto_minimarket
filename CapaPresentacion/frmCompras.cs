@@ -452,7 +452,6 @@ namespace CapaPresentacion
             Compra oCompra = new Compra()
             {
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
-                oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtidproveedor.Text) },
                 TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
                 NumeroDocumento = numerodocumento,
                 MontoTotal = Convert.ToDecimal(txttotalpagar.Text)

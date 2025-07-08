@@ -34,8 +34,7 @@ namespace CapaPresentacion
                 txtfecha.Text = oCompra.FechaRegistro;
                 txttipodocumento.Text = oCompra.TipoDocumento;
                 txtusuario.Text = oCompra.oUsuario.NombreCompleto;
-                txtdocproveedor.Text = oCompra.oProveedor.Documento;
-                txtnombreproveedor.Text = oCompra.oProveedor.RazonSocial;
+
 
                 dgvdata.Rows.Clear();
                 foreach (Detalle_Compra dc in oCompra.oDetalleCompra)

@@ -16,8 +16,6 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-=======
 
         private void frmReportes_Load(object sender, EventArgs e)
         {
@@ -28,6 +26,5 @@ namespace CapaPresentacion
         {
 
         }
->>>>>>> gianmarco
     }
 }
